@@ -30,18 +30,17 @@ const Demo = () => {
   const [visible, setVisible] = useState(false);
 
   const showModal = () =>  setVisible(true);
-
   const hideModal = () =>  setVisible(false);
+
 
   return (
     <div>
       <section>
         <nav role="navigation">
             <button type="button" onClick={() => showModal()} className="btn">
-              Open Dialog
+              Open React Dialog
             </button>
         </nav>
-
         <Modal visible={visible}>
             <h3 className="dialog__title">
                 React Dialog
